@@ -1,15 +1,15 @@
 #include	<YSI_Coding\y_hooks>
 
-task AutoSaveTimer[100000*7]() // ૿�����ż����蹷ء 7 �ҷ�
+task AutoSaveTimer[100000*7]() // เซฟข้อมูลผู้เล่นทุก 7 นาที
 {
     foreach (new i : Player)
     {
         if (playerData[i][IsLoggedIn])
         {
-			//૿�����ż�����
+			//เซฟข้อมูลผู้เล่น
         	UpdateplayerData(i);
 		}
     }
-    SendClientMessageToAll(-1, "{FFFF00}[AutoSave - Connecting_Z] : {DCDCDC}�к���ӡ�úѹ�֡�����ż����蹷ء�����ѵ��ѵ�����!");
+    SendClientMessageToAll(-1, "{FFFF00}[AutoSave - Connecting_Z] : {DCDCDC}ระบบได้ทำการบันทึกข้อมูลผู้เล่นทุกคนโดยอัตโนมัติแล้ว!");
 }
 
